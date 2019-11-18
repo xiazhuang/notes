@@ -1,0 +1,10 @@
+
+func DeleteSlice(a []int) []int{
+	j := 0
+	for _, val := range a {
+		if val == 1 {
+			a[j] = val
+			j++
+		}
+	}
+	return a[:j]
